@@ -1,0 +1,16 @@
+# Ex057 - Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'.
+# Caso esteja errado, peça a digitação novamente até ter um valor correto.
+# [Exemplo] A EXECUÇÃO DO PROGRAMA SERÁ COMO MOSTRADO ABAIXO:
+# Informe seu sexo: [M/F] t
+# Dados inválidos. Por favor, informe seu sexo: m
+# Sexo M registrado com sucesso
+sexo = str(input('Informe seu sexo [M/F]: ').strip().upper()[0])
+while sexo not in 'MF':
+    sexo = str(input('Dados inválidos. Por favor, informe seu sexo: ').strip().upper()[0])
+print(f'Sexo {sexo} registrado com sucesso!')
+
+# sexo = str(input('Informe seu sexo [M/F]: ').upper())
+# sexos = ('M', 'F')
+# while sexo not in sexos:
+#     sexo = str(input('Dados inválidos. Por favor, informe seu sexo: ').upper())
+# print(f'Sexo {sexo} registrado com sucesso!')
