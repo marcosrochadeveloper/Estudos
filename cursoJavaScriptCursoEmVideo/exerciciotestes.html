@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <div>Teste<input type="text" id="valor"/>
+    <input type="button" placeholder="Enviar">
+    </div>
+    </form>
+    <script>
+        var valor = document.getElementById('valor')
+        document.write(valor.innerText)
+        //var nome = window.prompt('Qual é o seu nome?')
+        //var salario = Number(window.prompt('Qual é o seu Salário?'))
+        document.write(`Olá ${nome}!<br/>`) //
+        document.write(`Seu nome tem ${nome.length} letras <br/>`) //Quantidade de letras
+        document.write(`Seu nome em maiúsculas fica ${nome.toUpperCase()}<br/>`) //Letras Maiúsculas
+        document.write(`Seu nome em minúsculas fica ${nome.toLowerCase()} <br/>`) //Letras Minúsculas
+        document.write("Seu Salário é " + salario.toLocaleString('pt-BR', {style: 'currency', currency : 'BRL'}))
+    </script>
+</body>
+</html>

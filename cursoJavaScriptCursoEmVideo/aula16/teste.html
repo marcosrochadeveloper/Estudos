@@ -1,0 +1,26 @@
+<script>
+/*DEU ERRADO*/
+</script>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTES</title>
+</head>
+<body>
+    <input type="number" name="numero1" id="numero1" oninput="teste(numero)">
+
+    <div id="res"></div>
+    <script>
+        var numero = document.getElementById('numero1').value
+        var numero = Number(numero)
+        var res = document.getElementById('res')
+        var res = function teste(n){
+            return `teste`
+        }
+        res.innerHTML = teste(numero)
+    </script>
+</body>
+</html>
