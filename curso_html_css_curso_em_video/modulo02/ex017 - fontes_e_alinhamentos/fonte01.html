@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            /*Colocando dessa forma, permite que seja compatível com mais dispositivos, porque por exemplo, caso o dispositivo não consiga acesso a fonte arial, utilizará a Helvetica, e caso não consiga nenhuma das duas, qualquer fonte sem serifa que tenha será utilizada.*/
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+
+            /*
+            Medidas Absolutas:
+            cm, mm, in(polegada), px, pt, pc
+
+            Medidas Relativas:
+            em(relativo o tamanho atual da fonte), ex(relativo a altura x de uma fonte),
+            rem(relativo a altura da fonte definida no body), vw(relativo a largura da "ViewPort" que é a largura da tela exibida, vh(relativo a altura da "ViewPort")
+            em, ex, rem, vw, vh, %
+            O tamanho padrão das fontes é de 16px
+            1em geralmente é o equivalente a 16px
+            */
+
+            /*Medidas recomendadas pela W3C são px e em*/
+            /*O Guanabara indica mais que utilize "em" pois em dispositivos específicos pode ser melhor interpretado para chegar ao resultado final*/
+
+            font-size: 1em;
+
+            /* lighter normal bold bolder*/
+        }
+
+        h1 {
+            /* shorthand font 
+            
+            - font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+
+            /* o código acima resume os 4 abaixo */
+
+            /* font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: 'Work Sans', sans-serif; */
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quod error accusantium hic sed in facere et corrupti repudiandae. Perferendis, distinctio! Nemo rerum, incidunt obcaecati quaerat distinctio nostrum quis iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatibus ab nemo officiis, architecto corporis deserunt eveniet recusandae veniam cum esse nesciunt dolorum enim molestiae odit autem, dolore cupiditate commodi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut ex cum sapiente numquam obcaecati rerum mollitia amet corporis maxime asperiores? Architecto reprehenderit aut natus voluptatibus sint reiciendis animi vero vel!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolores unde atque animi assumenda aspernatur neque ad magni eum iusto. Qui cum deserunt, unde libero repellendus mollitia cumque sunt exercitationem?</p>
+</body>
+</html>
