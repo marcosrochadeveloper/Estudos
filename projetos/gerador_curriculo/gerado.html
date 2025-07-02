@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Gerado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#res {
+            padding: 20px;
+        }
+
+        body {
+            background-color: darkgrey;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        article#curriculo {
+            position: relative;
+            margin: auto;
+            padding: 2cm;
+            background-color: white;
+            width: 21cm;
+            height: 29.7cm;
+        }
+
+        section {
+            margin-bottom: 1cm;
+        }
+        
+        section h1{
+            font-size: 20pt;
+        }
+
+        textarea {
+            height: 0.5cm;
+            vertical-align: bottom;
+        }
+
+        p {
+            margin: 0.1cm;
+            font-weight: bolder;
+        }
+
+        span {
+            font-weight: normal;
+        }
+
+        aside#foto3x4 {
+            position: absolute;
+            margin-right: 2cm;
+            background-color: grey;
+            width: 3cm;
+            height: 4cm;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body onload="load()">
+    <header>
+        <div id="res"></div>
+    </header>
+    <main>
+        <article id="curriculo">
+            <aside id="foto3x4">
+            </aside>
+            <section id="cabecalho">
+                <h1 id="txtnome"></h1><hr>
+
+                <p id="endereco">Endereço:
+                    <span name="txtendereco" id="txtendereco">
+                    </span>
+                </p>
+
+                <p id="bairro">Bairro:
+                    <span name="txtbairro" id="txtbairro">
+                    </span>
+                </p>
+
+                <p id="telefone">Telefone:
+                    <span name="txttelefone" id="txttelefone">
+                    </span>
+                </p>
+
+                <p id="email">E-mail:
+                    <span name="txtemail" id="txtemail">
+                    </span>
+                </p>
+            </section>
+
+            <section id="dados_pessoais">
+                <h1>DADOS PESSOAIS</h1><hr>
+                <p id="estadocivil">Estado Civil:
+
+                </p>
+
+                <p id="nascimento">Data de Nascimento: 
+
+                </p>
+
+                <p id="nacionalidade">Nacionalidade: 
+
+                </p>
+
+                <p id="naturalidade">Naturalidade: 
+
+                </p>
+
+            </section>
+
+            <section id="experiencias">
+                <h1>EXPERIÊNCIAS PROFISSIONAIS</h1><hr>
+            </section>
+
+            <section id="adicionais">
+                <h1>INFORMAÇÕES ADICIONAIS</h1><hr>
+            </section>
+
+            <section id="objetivo">
+                <h1>OBJETIVO</h1><hr>
+            </section>
+        </article>
+
+
+
+    </main>
+    <script>
+        function load(){
+            const params = new URLSearchParams(window.location.search);
+            const nome = params.get("nome");
+            const endereco = params.get("endereco");
+            const bairro = params.get("bairro");
+            const telefone = params.get("telefone");
+            const res = document.getElementById("res");
+
+
+            const txtnome = document.getElementById("txtnome");
+            const txtendereco = document.getElementById("txtendereco");
+            const txtbairro = document.getElementById("txtbairro");
+            const txttelefone = document.getElementById("txttelefone");
+            const txtemail = document.getElementById("txtemail");
+
+
+            res.innerHTML = `<h1>Currículo de ${nome}</h1>`;
+            txtnome.innerHTML = `${nome}`;
+            txtendereco.innerHTML = `${endereco}`
+            txtbairro.innerHTML = `${bairro}`
+            txttelefone.innerHTML = `${telefone}`
+            txtemail.innerHTML = `${email}`;
+
+
+        }
+    </script>
+</body>
+</html>

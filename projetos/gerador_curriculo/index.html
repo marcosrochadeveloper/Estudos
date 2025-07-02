@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Currículos</title>
+    <style>
+        body {
+            background-color: darkgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            max-width: 500px;
+        }
+
+        p {
+            margin-right: 250px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gere seu Currículo</h1>
+    </header>
+    <main>
+        <form action="gerado.html">
+            <h1>CABEÇALHO</h1><hr>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" min="50">
+            </p>
+
+            <p>
+                <label for="iendereco">Endereço: </label>
+                <input type="text" name="endereco" id="iendereco">
+            </p>
+
+            <p>
+                <label for="ibairro">Bairro: </label>
+                <input type="text" name="bairro" id="ibairro">
+            </p>
+            <p>
+                <label for="itelefone">Telefone: </label>
+                <input type="number" name="telefone" id="itelefone">
+            </p>
+
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <input type="submit" value="Enviar">
+
+        </form>
+    </main>
+</body>
+</html>
