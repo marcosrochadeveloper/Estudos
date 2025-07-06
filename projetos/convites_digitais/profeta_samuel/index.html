@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Profeta Samuel</title>
+    <style>
+        body{
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(254, 241, 169);
+        }
+        main {
+            margin: auto;
+            max-width: 600px;
+            height: 100vh;
+            background-color: white;
+            background-image:url("imagens/fundo_azul.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        section#icones {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+ 
+        div.container{
+            /* background-color: white; */
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            width: 125px;
+            height: 150px;
+        }
+
+        div.icone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkred;
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+        }
+
+        div.icone img {
+            width: 50px;
+        }
+
+        a.link{
+            text-decoration: none;
+            text-align: center;
+            font-weight: bolder;
+            background-color: darkgray;
+            width: 75%;
+            padding: 5px;
+            color: white;
+            border-radius: 5px;
+            font-size: 0.8em;
+        }
+
+        a.link:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="icones">
+            <article>
+                <div class="container">
+                    <div class="icone">
+                        <img src="imagens/presenca.png" alt="">
+                    </div>
+
+                    <a href="#" class="link">Confirmar Presença</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="container">
+                    <div class="icone">
+                        <img src="imagens/localizacao.png" alt="">
+                    </div>
+
+                    <a href="#" class="link">Acessar Localização</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="container">
+                    <div class="icone">
+                        <img src="imagens/presente.png" alt="">
+                    </div>
+
+                    <a href="#" class="link">Sugestões de Presentes</a>
+                </div>
+            </article>
+        </section>
+        <p>Clique nos ícones para interagir</p>
+
+    </main>
+</body>
+</html>
