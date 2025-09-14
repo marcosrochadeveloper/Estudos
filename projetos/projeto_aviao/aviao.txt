@@ -1,0 +1,45 @@
+# Um avião precisa sair do ponto de partida e chegar no ponto de chegada.
+
+#O avião não consegue percorrer a distância total sem parar para abastecer.
+
+# No percurso existem N pontos de abastecimento.
+
+CADA PONTO possui
+    - UM NOME
+    - UMA DISTÂNCIA DO PONTO ANTERIOR OU DO PONTO DE PARTIDA EM QUILÔMETROS
+    - Um tempo necessário para reabastecer em minutos
+
+
+- O avião consome 2 litros de combustível por quilômetro.
+- Seu tanque tem capacidade de 200 litros.
+- O preço do combustível é R$6,00 por litro.
+
+
+O objetivo é determinar:
+    - Quantas paradas serão necessárias.
+    - Quais pontos serão escolhidos para abastecimento.
+    - O tempo total do voo, incluindo paradas.
+    - O total de combustível necessário.
+    - O custo total do combustível.
+
+
+flight_plan(start, refuel_points, end_distance, end):
+
+
+Exemplo de fuel_points:
+refuel_points = [
+    ("WP1", 150, 15),
+    ("WP2", 180, 15),
+    ("WP3", 120, 15),
+    ("WP4", 200, 15)
+]
+
+
+Exemplo de output esperado:
+{
+    "num_stops": 2,
+    "stops": ["WP1", "WP3"],
+    "total_time": 320,
+    "total_fuel": 450,
+    "total_cost": 2700
+}
